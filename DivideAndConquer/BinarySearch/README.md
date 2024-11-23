@@ -57,9 +57,13 @@ Line 3 - Check if element is present at the middle itself <br/>
 Line 6 - If element is smaller than middle element, then it can only be present in left subarray <br/>
 Line 9 - Else Condition -> the element can only be present in right subarray <br/>
 
-**Time complexity**: Binary search has a logarithmic time complexity O(log n) which makes it significantly faster than linear search for large datasets. 
+**Time complexity**: Binary search has a logarithmic time complexity **O(log n)** which makes it significantly faster than linear search for large datasets. 
 
 ## Example Run
+
+```bash
+cd DivideAndConquer/BinarySearch
+```
 
 ```bash
 python3 main.py
