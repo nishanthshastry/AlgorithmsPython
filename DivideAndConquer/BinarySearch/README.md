@@ -13,18 +13,21 @@
 ### Iterative Approach
 
 **Algorithm BinarySearch** (Array, low, high, element)
-1.   while low <= high:
-2.       mid = low + (high - low) // 2
-3.       if Array[mid] == element then
-4.            return mid
-5.       else if Array[mid] < element then
-6.            low = mid + 1
-7.       endif
-8.       else
-9.            high = mid - 1
-10.      endif
-11.  endWhile
-12.  return “Element Not Present”
+```bash
+   while low <= high:
+       mid = low + (high - low) // 2
+       if Array[mid] == element then
+            return mid
+       else
+        if Array[mid] < element then
+                low = mid + 1
+        endif
+       else
+            high = mid - 1
+       endif
+   endWhile
+   return “Element Not Present”
+```
 
 Line 3 - Check if element is present at middle position
 Line 6 - If element is greater, ignore left half
@@ -32,20 +35,23 @@ Line 9 - If element is smaller, ignore right half
 
 ### Recursive Approach
 
-**Algorithm BinarySearch** (Array, low, high, element):
-1.    if high >= low then
-2.        mid = low + (high - low) // 2
-3.        if Array[mid] == element then
-4.            return mid
-5.        else if Array[mid] > element then
-6.            return binarySearch(Array, low, mid-1, element)
-7.        endif
-8.        else
-9.            return binarySearch(Array, mid + 1, high, element)
-10.      endif
-11.  else
-12.       return “Element Not Present”
-13.  endif
+**Algorithm BinarySearch** (Array, low, high, element)
+```bash
+    if high >= low then
+        mid = low + (high - low) // 2
+        if Array[mid] == element then
+            return mid
+        else 
+            if Array[mid] > element then
+                return binarySearch(Array, low, mid-1, element)
+            endif
+        else
+            return binarySearch(Array, mid + 1, high, element)
+        endif
+    else
+       return “Element Not Present”
+    endif
+```
 
 Line 3 - Check if element is present at the middle itself
 Line 6 - If element is smaller than middle element, then it can only be present in left subarray
