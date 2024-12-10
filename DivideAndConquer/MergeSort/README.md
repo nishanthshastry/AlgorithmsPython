@@ -19,12 +19,12 @@
     for j = 1 to n2
         R[j] = A[q + j]
     endfor
-    L[n1 + 1] = &infin;
-    R[n2 + 1] = &infin;
+    L[n1 + 1] = ∞
+    R[n2 + 1] = ∞
     i = 1
     j = 1
     for k = p to r
-        if L[i] &le; R[j] then
+        if L[i] <= R[j] then
             A[k] = L[i]
             i = i + 1
         else
@@ -36,8 +36,8 @@
 
 **Algorithm MergeSort** (A, p, r)
 ```bash
-    if p &lt; r then
-        q = &lfloor;(p + r)/2&rfloor;
+    if p < r then
+        q = ⌊(p + r)/2⌋
         MergeSort(A, p, q)
         MergeSort(A, q + 1, r)
         Merge(A, p, q, r)
