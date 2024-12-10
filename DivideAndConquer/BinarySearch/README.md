@@ -2,9 +2,9 @@
 
 ## Binary Search - Divide And Conquer phases
 
-- Divide Phase: In binary search, the "divide" step involves calculating the middle index of the current search space and comparing the target value to the element at that index.
-- Conquer Phase: Based on the comparison, the algorithm "conquers" by narrowing the search space to either the left or right half of the array, depending on whether the target is smaller or larger than the middle element.
-- Combine Phase: Since the search space is repeatedly halved, the algorithm quickly converges to the target value or determines that it is not present in the array.
+- **Divide** Phase: In binary search, the "divide" step involves calculating the middle index of the current search space and comparing the target value to the element at that index.
+- **Conquer** Phase: Based on the comparison, the algorithm "conquers" by narrowing the search space to either the left or right half of the array, depending on whether the target is smaller or larger than the middle element.
+- **Combine** Phase: Since the search space is repeatedly halved, the algorithm quickly converges to the target value or determines that it is not present in the array.
 
 ### NOTE - The array must be sorted for binary search to work efficiently. 
 
