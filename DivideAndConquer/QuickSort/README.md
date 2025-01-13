@@ -35,6 +35,10 @@
 - Average Case: **(n log n)**
 - Worst Case: **O(n<sup>2</sup>)**
 
+### NOTE - The code implements the above algorithm along with python based concepts for better working and efficient code
+
+(_Ref geeksforgeeks link_ - _[https://www.geeksforgeeks.org/quick-sort-algorithm/](https://www.geeksforgeeks.org/quick-sort-algorithm/)_)
+
 ## Example Run
 
 ```bash
