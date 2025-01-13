@@ -2,9 +2,9 @@
 
 ## Quick Sort - Divide And Conquer phases
 
-- **Divide** Phase: 
-- **Conquer** Phase: 
-- **Merge** Phase: 
+- **Divide** Phase: Choose a pivot and partition the array into two sub-arrays elements <= pivot and elements > pivot, placing the pivot in its correct position.
+- **Conquer** Phase: Recursively apply Quick Sort to the left and right sub-arrays.
+- **Merge** Phase: No explicit merge; the sorted sub-arrays and pivot naturally form the sorted array as recursion unwinds.
 
 ## Algorithm
 
