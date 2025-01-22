@@ -104,7 +104,7 @@ After the multiplication, the extra padded rows and columns are removed to resto
 - **Effect**: Additional zeros do not affect the multiplication result.
 - **Removal**: Padding is removed after multiplication to return the correct-sized result.
 
-### NOTE 2 - The below code implements the above algorithm along with python based concepts for better working and efficient code
+### NOTE 2 - The code implements the above algorithm along with python based concepts for better working and efficient code
 
 ### NOTE 3 - The algorithm and concepts are completely referenced from the textbook "*Introduction to Algorithms 3rd edition* by - *Cormen, Leiserson, Rivest and Stein (CLRS)*"
 
