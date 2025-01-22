@@ -93,9 +93,10 @@ In the function **strassen_multiply**(), padding is done using,
 A_pad = np.pad(A, ((0, m - n), (0, m - n)), mode='constant')
 ```
 
-`A` is the original matrix.
-`m` is the next power of 2.
-The `np.pad()` function fills the extra rows and columns with zeros.
+- `A` is the original matrix.
+- `m` is the next power of 2.
+- The `np.pad()` function fills the extra rows and columns with zeros.
+
 After the multiplication, the extra padded rows and columns are removed to restore the original matrix size.
 
 ##### Key Points About Padding,
